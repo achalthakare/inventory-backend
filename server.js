@@ -27,7 +27,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const errorHandler = require('./middleware/errorMiddleware');
-const db = require('./db'); // 👈 ADD THIS
+const db = require('./config/db'); // 👈 ADD THIS
 
 const materialsRoutes = require('./routes/materialsRoutes');
 const requestsRoutes = require('./routes/requestsRoutes');
